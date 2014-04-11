@@ -1,6 +1,16 @@
 class EmailsController < ApplicationController
 
-	def create 
+	def index
+
 	end
-	
+
+	def new 
+		@email = Email.new
+	end
+
+	def create 
+		@email = Email.new(params[:email])
+		@email.save
+	end
+
 end
