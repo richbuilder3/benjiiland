@@ -2,7 +2,7 @@ Benjiiland::Application.routes.draw do
 
 
   # root 'welcome#index'
-  root 'emails#index'
+  root 'emails#new'
   resources :emails 
 
   # The priority is based upon order of creation: first created -> highest priority.

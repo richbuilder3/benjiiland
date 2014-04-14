@@ -9,8 +9,21 @@ class EmailsController < ApplicationController
 	end
 
 	def create 
-		@email = Email.new(params[:email])
+		@email = Email.new(params[:email].permit(:content))
 		@email.save
+		# ({
+		# 	content: params[:content]
+
+		# 	})
+		
+			redirect_to new_email
+	end
+
+
+	private
+
+	def email_params
+		params.require(:email).permit(:content)
 	end
 
 end
