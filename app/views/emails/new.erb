@@ -1,37 +1,55 @@
-
-
 <div id="header">
-<img src="/images/benjii_logo.png" alt="Benjii" width="175px" >
-
-new.erb
+	<%= image_tag "benjii_logo.png", width: "100" %>
 </div>
-
-
-
-
-
-
-
 
 <div id="main">
-
-
-
-
-<%= form_for @email do |f| %>
-	<%= f.label :Email %>
-	<%= f.text_field :content %>
-	<%= f.submit %>
-	<% end %>
-	
-
-
-
+	<div class="header-info">
+		<h1>Benjii if Financial Reporting for the Future</h1>
+		<h2>Better financial reporting</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quaerat quae similique beatae facere architecto excepturi assumenda impedit vero ipsa? Quibusdam, odit nobis ea quam qui ut animi nisi impedit?</p>
+	</div>
 </div>
 
+	
+<section id="call-to-action">
+	<h2>Sign up for our Private Beta</h2>
+	<%= form_for @email do |f| %>
+	<%= f.text_field :content, class: "form-control", placeholder: "Email" %>
+	<%= f.submit 'Submit', class: "btn btn-primary" %>
+	<% end %>
 
+</section>
 
+<section id="about" class="container">
+	<h1>About Benjii</h1>
 
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, debitis eum vel dolor quos. Nisi, cumque, illo, ipsa, quod molestias neque corporis earum architecto dolorem est commodi optio non odit.</p>
+</section>
+
+<section id="how-it-works">
+	<div class="container">
+		<h1>How It Works</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, saepe numquam eum veniam pariatur veritatis id blanditiis expedita et harum ad cum facere atque ab tempore ratione doloremque beatae quo.</p>
+	</div>
+</section>
+
+<section id="testimonials" class="container">
+	<h2>What Our Clients Says</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, aliquid temporibus maxime perspiciatis aliquam laudantium at sequi sed voluptates hic exercitationem quisquam atque tempora vitae nesciunt architecto repellat officiis. Tenetur!</p>
+</section>
+
+<section id="press">
+	<div class="container">
+			<h2>As seen in</h2>
+	<div class="row">
+		<col-lg-4> <img src="http://s3.amazonaws.com/crunchbase_prod_assets/assets/images/resized/0001/0576/10576v3-max-250x250.jpg" alt="" width="200"> </col-lg-4>
+		<col-lg-4> <img src="http://s3.amazonaws.com/crunchbase_prod_assets/assets/images/resized/0001/0576/10576v3-max-250x250.jpg" alt="" width="200"> </col-lg-4>
+		<col-lg-4> <img src="http://s3.amazonaws.com/crunchbase_prod_assets/assets/images/resized/0001/0576/10576v3-max-250x250.jpg" alt="" width="200"> </col-lg-4>
+	</div>
+
+	</div>
+
+</section>
 
 <div id="footer">
 	<p>Benjii</p>
