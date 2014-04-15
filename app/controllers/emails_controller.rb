@@ -15,8 +15,8 @@ class EmailsController < ApplicationController
 		# 	content: params[:content]
 
 		# 	})
+			redirect_to '/'
 		
-			redirect_to new_email
 	end
 
 
