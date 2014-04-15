@@ -30,6 +30,10 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+
+	  group :production do
+	  	gem 'rails_12factor'
+	end
 end
 
 # Use ActiveModel has_secure_password
