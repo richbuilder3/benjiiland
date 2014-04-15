@@ -3,7 +3,7 @@
 	/*background-color: #1FD26A;*/
 	background-color: #75A3D1;
 	color:#fff;
-	padding: 25px;
+	padding: 20px;
 	/*text-align:center;*/
 }
 
@@ -30,10 +30,12 @@ h3 { font-size: 24px; }
 
 
 #main {
-background-color: #32313B;
+/*background-color: #32313B;*/
 padding-bottom: 30em;
 text-align: center;
-	
+background-image: url('http://www.theneworleanstribune.com/main/wp-content/uploads/2014/04/Brand-Discovery-1024x734.jpg');
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 
@@ -43,6 +45,6 @@ text-align: center;
 	/*background-color: #1FD26A;*/
 	background-color: #75A3D1;
 	color:#fff;
-	padding: 20px;
+	padding: 10px;
 	text-align:center;
 }
