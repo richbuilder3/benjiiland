@@ -1,6 +1,7 @@
 #header {
 	/*background-color: #2b3442;*/
-	background-color: #1FD26A;
+	/*background-color: #1FD26A;*/
+	background-color: #75A3D1;
 	color:#fff;
 	padding: 50px;
 	/*text-align:center;*/
@@ -27,10 +28,11 @@ h2 { font-size: 28px; }
 h3 { font-size: 24px; }
 
 
+
 #main {
 background-color: #32313B;
 padding-bottom: 30em;
-
+text-align: center;
 	
 }
 
@@ -38,7 +40,8 @@ padding-bottom: 30em;
 
 #footer {
 	/*background-color: #2b3442;*/
-	background-color: #1FD26A;
+	/*background-color: #1FD26A;*/
+	background-color: #75A3D1;
 	color:#fff;
 	padding: 20px;
 	text-align:center;
