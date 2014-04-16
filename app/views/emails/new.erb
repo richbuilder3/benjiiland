@@ -13,11 +13,13 @@
 	
 <section id="call-to-action">
 	<h2>Sign up for our Private Beta</h2>
+
+	<div class="form-inline" role="form">
 	<%= form_for @email do |f| %>
-	<%= f.text_field :content, class: "form-control", placeholder: "Email" %>
+	<%= f.text_field :content, class: "form-control", placeholder: "Email", :style => "width:368px;" %>
 	<%= f.submit 'Submit', class: "btn btn-primary" %>
 	<% end %>
-
+	</div>
 </section>
 
 <section id="about" class="container">
@@ -28,6 +30,11 @@
 
 <section id="how-it-works">
 	<div class="container">
+
+		<h1>What are our beliefs?</h1>
+		<p>Benjii believes in the power of underserved communities.  We know that providing a solution to a neglected community’s agonizing problem resonates with them because they have been craving to be heard for so long. We see they ecstatically love and support our products and services because we alleviate frustration and improve their lives.
+		</p>
+			<br><br><br>
 		<h1>What we are building?</h1>
 		<p>Our suite of products and services includes a desktop platform that allows access to financial services that help them grow and sustain their business. Currently, we are working on providing financial statements that are created by licensed CPAs and tax return preparation that are reviewd and revised by licensed CPAs. Our product road map includes providing ways to educate minority business owners about what financial metrics are important when analyzing their business, creating a mobile application, and utilizing banks/lending institutions finance requirements to develop assessment tools.</p>
 	</div>
@@ -35,7 +42,14 @@
 
 <section id="testimonials" class="container">
 	<h2>What Our Clients Says</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, aliquid temporibus maxime perspiciatis aliquam laudantium at sequi sed voluptates hic exercitationem quisquam atque tempora vitae nesciunt architecto repellat officiis. Tenetur!</p>
+	<p>Using the Tax Chief was one of the best decisions I've made. Not only did they answer every question I had, they got me a larger refund than I anticipated. I wouldn't go anywhere else for my personal and business tax needs. <br><br>Ronda Randle, Academic Romper Room Owner</p>
+	<br><br>
+	<p>Being a barber and owner of several barbershops in Houston, I've seen tax services come and go for a long time. The Tax Chief is by far the best in the business. Never before have I been able to file my taxes in between clients. The Tax Chief team got me my refund faster than I expected!
+	<br><br>Eros Shaw, Mystros Barber School & Barber Shops Owner</p>
+	<br><br>
+	<p>Being a Chef with a mobile food truck I’m constantly on the go. With the Tax Chief, I was able to file my taxes right from my food truck!!!
+	<br><br>Jason “Chef JayJay” Taylor, Allseasonz Mobile Owner</p>
+
 </section>
 
 <section id="press">
