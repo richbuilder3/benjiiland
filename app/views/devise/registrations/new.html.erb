@@ -1,0 +1,35 @@
+<div class="main2">
+<div class="container" >
+  <%= image_tag 'benjii_logo.png', width: "100", class: "form_pic img-responsive" %>
+  <h2 style="text-align:center">Schedule an Appointment with a Benjii Representative!</h2>
+<div class="box">
+
+
+		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+			  <%= devise_error_messages! %>
+
+			  <div class="form-group">
+			  <%= f.label :email %>
+			  <%= f.email_field :email, placeholder: "Email", class: "form-control" %>			  	
+			  </div>
+
+			  <div class="form-group">
+			  <%= f.label :password %>
+			  <%= f.password_field :password, placeholder: "Password", class: "form-control" %>			  	
+			  </div>
+
+			  <div class="form-group">
+			  <%= f.label :confirm_password %>
+			  <%= f.password_field :password_confirmation, placeholder: "Confirm Password", class: "form-control" %>			  	
+			  </div>
+
+			  <div class="form-group">
+			  <%= f.submit "SIGN UP", class: 'btn btn-primary' %>
+			  </div>
+		<% end %>
+
+
+</div>
+</div>
+  <h4 style="text-align:center">Thank you for your choosing Benjii for your bookkeeping and accounting needs. A representative will contact you at the specified time.</h4>
+</div>

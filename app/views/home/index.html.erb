@@ -1,0 +1,101 @@
+<div 
+
+<div id="main">
+	<div id="logo">	
+		<img alt="Benjii logo" src="/assets/benjii_logo-5ed89f51f83220cc7bb91a000ce6f3bb.png" width="100" />
+	</div>
+
+	<div class="header-info">
+		<h1 class="specialH1">Affordable Accounting Services</h1>
+		<h4 style="color:#fff;">Benjii provides licensed CPAs to handle all your bookkeeping and tax needs.</h4>
+	</div>
+	
+	<div id="signup">
+		<h3 class="specialH3">Sign up for a FREE consultation</h3>
+
+		<%= form_for(resource, :as => resource_name, :html => {:class => "form-inline"}, :url => registration_path(resource_name)) do |f| %>
+			  <%= devise_error_messages! %>
+
+			  <div class="form-group">
+			  <%= f.email_field :email, placeholder: "Email", class: "form-control" %>			  	
+			  </div>
+
+			  <div class="form-group">
+			  <%= f.password_field :password, placeholder: "Password", class: "form-control" %>			  	
+			  </div>
+
+			  <div class="form-group">
+			  <%= f.password_field :password_confirmation, placeholder: "Confirm Password", class: "form-control" %>			  	
+			  </div>
+
+			  <div class="form-group">
+			  <%= f.submit "SIGN UP", class: 'btn btn-default' %>
+			  </div>
+		<% end %>
+
+			<div id="signin">
+		<h3 class="specialH3"> Or <%= link_to "Sign In", new_user_session_path %> to your account.</h3>
+	</div>
+	</div>
+</div>
+
+<section id="call-to-action">
+		
+	<div class="container">
+		<h2 style="text-align:center">Benjii's Commitment to Your Business</h2>
+	<p>Benjii started as a way to assist small business owners in their efforts to scale and sustain economic growth. In the process we decided to create a secure online method for bookkeeping and tax preparation with the intent of providing clients access to certified public accountants (CPAs) at a fraction of the cost of traditional firms.</p>
+	<p>Most small businesses are faced with roadblocks which include the lack of access to affordable financial tools and education.  From this insight we've built an online platform that allows smart entrepreneurs to work directly with licensed CPAs regardless of location.</p>
+	</div>
+</section>
+
+<div id="spacer">
+</div>
+
+<div id="process">
+	<div class="container">
+		<h2 style="text-align:center">It's as simple as uploading all of your documents.</h2>
+		<div class="row">
+			<div class="col-md-4"><h3>Submit Your Documents</h3> <p>Upload or mail us your documents on a weekly or monthly basis.</p> </div>
+			<div class="col-md-4"> <h3>We Analyze The Data</h3><p>Our team of Accountants and CPAs prepares detailed financial reports to give you critical insights into the current state of your business.</p> </div>
+			<div class="col-md-4"> <h3>Review Your Reports</h3><p>Log in to obtain monthly, quarterly, and annual financial reports that tells the story of your business.</p> </div>
+		</div>
+	</div>
+</div>
+
+
+<div id="picthree">
+</div>
+
+<div id="process2">
+	<div class="container">
+		<h2 style="text-align:center">Why Outsource Bookkeeping?</h2>
+		<div class="row">
+			<div class="col-md-4"><h3>Affordability</h3> <p>Receive financial reports for less than 20% of what it would cost for you to hire a traditional CPA firm.</p> </div>
+			<div class="col-md-4"> <h3>Insight</h3><p>Receive detailed finanicial reports monitoring the finacial health of your company including analysis of revenue, expenses, and profit.</p></div>
+			<div class="col-md-4"> <h3>Growth</h3><p>All reports are reviewed and approved by our team of licenced CPAs which is strongly preferred to receive bank financing and a majority of outside investment opportunities.</p> </div>
+		</div>
+	</div>
+</div>
+
+<div id="calltoaction2">
+	<h3 style="color:#fff; margin-bottom:15px;">Sign up to Talk to a Benjii Team Member Today!</h3>
+	<%= form_for(resource, :as => resource_name, :html => {:class => "form-inline"}, :url => registration_path(resource_name)) do |f| %>
+		  <%= devise_error_messages! %>
+
+		  <div class="form-group">
+		  <%= f.email_field :email, placeholder: "Email", class: "form-control" %>			  	
+		  </div>
+
+		  <div class="form-group">
+		  <%= f.password_field :password, placeholder: "Password", class: "form-control" %>			  	
+		  </div>
+
+		  <div class="form-group">
+		  <%= f.password_field :password_confirmation, placeholder: "Confirm Password", class: "form-control" %>			  	
+		  </div>
+
+		  <div class="form-group">
+		  <%= f.submit "SIGN UP", class: 'btn btn-success' %>
+		  </div>
+	<% end %>
+</div>

@@ -1,0 +1,70 @@
+<div class="main2">
+<div class="container" >
+  <%= image_tag 'benjii_logo.png', width: "100", class: "form_pic img-responsive" %>
+  <h2 style="text-align:center">Schedule an Appointment with a Benjii Representative!</h2>
+<div class="box">
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+    <%= devise_error_messages! %>
+
+    <div class="form-group">
+    <%= f.label :first %>
+    <%= f.text_field :first, placeholder: "First Name", class: "form-control" %>  
+    </div>
+
+    <div class="form-group">
+    <%= f.label :last %>
+    <%= f.text_field :last, placeholder: "Last Name", class: "form-control" %>  
+    </div>
+
+    <div class="form-group">
+    <%= f.label :company %>
+     <%= f.text_field :company, placeholder: "Company", class: "form-control" %>   
+    </div>
+    
+    <div class="form-group">
+       <%= f.label :phone %>
+       <%= f.text_field :phone, placeholder: "Best phone number to reach you at", class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :best_time_to_call %>
+      <%= f.select(:time_to_call, options_for_select([['Morning', "Morning"], ['Afternoon', "Afternoon"], ["Evening", "Evening"]]), {}, { :class => 'styled-select' }) %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :best_day_to_call %>
+            <%= f.select(:day_to_call, options_for_select([['Weekday', "Weekday"], ['Weekend', "Weekend"]]), {}, { :class => 'styled-select' }) %>
+    </div>
+
+<!-- <div><%#= f.label :email %><br />
+    <%#= f.email_field :email, autofocus: true %></div>
+
+    <%# if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      <div>Currently waiting confirmation for: <%#= resource.unconfirmed_email %></div>
+    <%# end %>
+
+    <div><%#= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+      <%#= f.password_field :password, autocomplete: "off" %></div>
+
+    <div><%#= f.label :password_confirmation %><br />
+      <%#= f.password_field :password_confirmation, autocomplete: "off" %></div>
+
+    <div><%#= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+      <%#= f.password_field :current_password, autocomplete: "off" %></div> -->
+
+    <div><%= f.submit "Submit", class: "btn btn-success" %></div>
+  <% end %>
+
+
+  <!-- <h3>Cancel my account</h3>
+
+  <p>Don't want to use Benjii anymore?<%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p> -->
+
+  <%#= link_to "Back", :back %>
+
+
+</div>
+</div>
+  <h4 style="text-align:center">Thank you for your choosing Benjii for your bookkeeping and accounting needs. A representative will contact you at the specified time.</h4>
+</div>

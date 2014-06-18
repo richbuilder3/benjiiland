@@ -1,0 +1,11 @@
+<div class="main2">
+<div class="container" >
+  <%= image_tag 'benjii_logo.png', width: "100", class: "form_pic img-responsive" %>
+  <h2 style="text-align:center">Your appointment has been scheduled!</h2>
+<div class="box">
+	<h3>A Benjii representative will contact you learn more about your bookkeeping and account needs so we can learn how we can better serve your business.</h3>
+	<h3>If you need to change your scheduling preference you can do so <%= link_to "here", edit_user_registration_path %>.</h3>
+</div>
+	<h3 style="text-align:center"><%= link_to "Log Out", destroy_user_session_path, method: 'delete' %></h3>
+</div>
+</div>
